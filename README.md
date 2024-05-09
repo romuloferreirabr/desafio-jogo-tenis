@@ -16,7 +16,7 @@ Você foi contratado para desenvolver um placar para um jogo de tênis. O placar
 
 ## Observações
 
-Você pode optar por implementar funcionalidades adicionais, como suporte a pontos de vantagem, tie-breaks, etc., para ganhar pontos extras.
+Você pode optar por implementar funcionalidades adicionais, como suporte a pontos de vantagem, tie-breaks, etc.
 O placar deve ser apresentado em uma aplicação de console simples.
 
 ## Exemplo:
