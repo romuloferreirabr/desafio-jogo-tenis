@@ -23,8 +23,8 @@ O placar deve ser apresentado em uma aplicação de console simples.
 
     Placar de Tênis:
     
-    Jogador 1: 0 sets, 40 pontos
-    Jogador 2: 1 sets, 30 pontos
+    Jogador 1: 0 sets, 5 games, 40 pontos no game atual
+    Jogador 2: 1 sets, 4 games, 30 pontos no game atual
     
     Próximo saque: Jogador 1
 
