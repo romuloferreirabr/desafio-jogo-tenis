@@ -8,7 +8,7 @@ Você foi contratado para desenvolver um placar para um jogo de tênis. O placar
 
  1. O placar deve exibir a pontuação atual de cada jogador de acordo com as regras do tênis (0, 15, 30, 40).
  2. Deve ser possível registrar pontos para cada jogador.
- 3. O placar deve ser capaz de registrar a contagem de sets para cada jogador.
+ 3. O placar deve ser capaz de registrar a contagem de games e sets para cada jogador.
  4. Deve ser possível identificar quando um jogador ganhou um set e, eventualmente, a partida.
  5. O placar deve fornecer uma maneira de reiniciar a partida.
  6. O código deve ser limpo, modular e bem comentado.
