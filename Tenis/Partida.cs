@@ -4,6 +4,7 @@
     {
         public Jogador PrimeiroPlayer { get; init; } = primeiroPlayer;
         public Jogador SegundoPlayer { get; init; } = segundoPlayer;
+
         public void ImprimirPlacar()
         {
             Console.WriteLine("Placar de Tênis:");
@@ -19,13 +20,26 @@
             {
                 jogador.Pontos = 0;
                 jogador.Games++;
+
                 if (jogador.Games == 6)
-                {
-                    jogador.Games = 0;
-                    jogador.Sets++;
-                }
+                    AdicionarSet(jogador);
             }
             return jogador.Pontos;
+        }
+
+        public void AdicionarSet(Jogador jogador)
+        {
+            if(jogador.Sets + 1 == 4)
+            {
+                Console.WriteLine($"O jogador {jogador} venceu a partida!");
+                Environment.Exit(0);
+            }
+            else
+            {
+                jogador.Sets++;
+                jogador.Games = 0;
+                jogador.Pontos = 0;
+            }
         }
     }
 }

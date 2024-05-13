@@ -14,7 +14,9 @@
                 partida.AdicionarPonto(partida.PrimeiroPlayer);
             else if(resultado == "2")
                 partida.AdicionarPonto(partida.SegundoPlayer);
-            
+            else if(resultado == "3")
+                partida.AdicionarSet(partida.PrimeiroPlayer);
+
             Main(args);
         }
     }
