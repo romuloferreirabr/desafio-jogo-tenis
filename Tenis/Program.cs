@@ -2,17 +2,19 @@
 {
     internal class Program
     {
+        public static Partida partida = new Partida(new Jogador(), new Jogador());
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
-            Console.WriteLine("Placar de Tênis:");
-            Console.WriteLine("Jogador 1: 0 sets, 5 games, 40 pontos no game atual");
-            Console.WriteLine("Jogador 2: 0 sets, 5 games, 40 pontos no game atual");
-            Console.WriteLine("Próximo saque: Jogador 1");
+            partida.ImprimirPlacar();
 
             var resultado = Console.ReadLine();
+
+            if(resultado == "1")
+                partida.AdicionarPonto(partida.PrimeiroPlayer);
+            else if(resultado == "2")
+                partida.AdicionarPonto(partida.SegundoPlayer);
+            
             Main(args);
         }
     }
