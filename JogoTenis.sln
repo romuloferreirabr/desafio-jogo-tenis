@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoTenis.Ui.Console", "JogoTenis.Ui.Console\JogoTenis.Ui.Console.csproj", "{00154A83-248F-43D5-A57A-F1AE02D07B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoTenis.Domain", "JogoTenis.Domain\JogoTenis.Domain.csproj", "{0EA54FCE-274C-45AF-86CA-8A4561530A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-UI", "1-UI", "{82E90381-0776-4EF2-9290-4F5D663D9BA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Domain", "2-Domain", "{4E238FD6-40CC-46DA-9EF2-7674CE5EA853}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Tests", "3-Tests", "{ABE77B91-8381-4B60-9631-14F0BD501123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoTenis.Tests", "JogoTenis.Tests\JogoTenis.Tests.csproj", "{69D52A49-4815-422B-BDDC-5D199C520393}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00154A83-248F-43D5-A57A-F1AE02D07B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00154A83-248F-43D5-A57A-F1AE02D07B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00154A83-248F-43D5-A57A-F1AE02D07B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00154A83-248F-43D5-A57A-F1AE02D07B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA54FCE-274C-45AF-86CA-8A4561530A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA54FCE-274C-45AF-86CA-8A4561530A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA54FCE-274C-45AF-86CA-8A4561530A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA54FCE-274C-45AF-86CA-8A4561530A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D52A49-4815-422B-BDDC-5D199C520393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D52A49-4815-422B-BDDC-5D199C520393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D52A49-4815-422B-BDDC-5D199C520393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D52A49-4815-422B-BDDC-5D199C520393}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00154A83-248F-43D5-A57A-F1AE02D07B17} = {82E90381-0776-4EF2-9290-4F5D663D9BA0}
+		{0EA54FCE-274C-45AF-86CA-8A4561530A88} = {4E238FD6-40CC-46DA-9EF2-7674CE5EA853}
+		{69D52A49-4815-422B-BDDC-5D199C520393} = {ABE77B91-8381-4B60-9631-14F0BD501123}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D40659B6-085B-4CF6-81E4-8861D6E70793}
+	EndGlobalSection
+EndGlobal
