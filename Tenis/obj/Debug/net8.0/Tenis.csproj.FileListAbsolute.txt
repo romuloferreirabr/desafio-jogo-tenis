@@ -1,0 +1,14 @@
+C:\Tenis\Tenis\bin\Debug\net8.0\Tenis.exe
+C:\Tenis\Tenis\bin\Debug\net8.0\Tenis.deps.json
+C:\Tenis\Tenis\bin\Debug\net8.0\Tenis.runtimeconfig.json
+C:\Tenis\Tenis\bin\Debug\net8.0\Tenis.dll
+C:\Tenis\Tenis\bin\Debug\net8.0\Tenis.pdb
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.AssemblyInfoInputs.cache
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.AssemblyInfo.cs
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.csproj.CoreCompileInputs.cache
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.dll
+C:\Tenis\Tenis\obj\Debug\net8.0\refint\Tenis.dll
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.pdb
+C:\Tenis\Tenis\obj\Debug\net8.0\Tenis.genruntimeconfig.cache
+C:\Tenis\Tenis\obj\Debug\net8.0\ref\Tenis.dll
