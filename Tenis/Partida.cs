@@ -5,40 +5,55 @@
         public Jogador PrimeiroPlayer { get; init; } = primeiroPlayer;
         public Jogador SegundoPlayer { get; init; } = segundoPlayer;
 
-        public void ImprimirPlacar()
+        //Lógica para definir quem saca primeiro de forma "randomica"
+        private Jogador ProximoSaque = Random.Shared.Next(0, 1) == 0 ? primeiroPlayer : segundoPlayer;
+
+        private readonly int[] Pontuacao = [0, 15, 30, 40];
+
+        public void Imprimir()
         {
             Console.WriteLine("Placar de Tênis:");
-            Console.WriteLine($"Jogador 1: {PrimeiroPlayer.Sets} sets, {PrimeiroPlayer.Games} games, {PrimeiroPlayer.Pontos} pontos no game atual");
-            Console.WriteLine($"Jogador 2: {SegundoPlayer.Sets} sets, {SegundoPlayer.Games} games, {SegundoPlayer.Pontos} pontos no game atual");
-            Console.WriteLine($"Próximo saque: {PrimeiroPlayer}");
+            Console.WriteLine($"Jogador 1: {PrimeiroPlayer.Sets} sets, {PrimeiroPlayer.Games} games, { Pontuacao[PrimeiroPlayer.Pontos] } pontos no game atual");
+            Console.WriteLine($"Jogador 2: {SegundoPlayer.Sets} sets, {SegundoPlayer.Games} games,  {Pontuacao[SegundoPlayer.Pontos] } pontos no game atual");
+            Console.WriteLine($"Próximo saque: {ProximoSaque.Nome}");
         }
 
-        public int AdicionarPonto(Jogador jogador)
+        public void Pontuar(Jogador jogador)
         {
             jogador.Pontos++;
-            if (jogador.Pontos == 4)
+
+            if (jogador.Pontos == Constantes.UltimoPonto)
             {
-                jogador.Pontos = 0;
+                jogador.Pontos =  Constantes.PrimeiroPonto;
                 jogador.Games++;
 
-                if (jogador.Games == 6)
+                if (jogador.Games == Constantes.UltimoGame)
                     AdicionarSet(jogador);
+
+                ProximoSaque = (ProximoSaque == PrimeiroPlayer) ? SegundoPlayer : PrimeiroPlayer;
+
+                PrimeiroPlayer.Pontos = 0;
+                SegundoPlayer.Pontos = 0;
             }
-            return jogador.Pontos;
         }
 
-        public void AdicionarSet(Jogador jogador)
+        private void AdicionarSet(Jogador jogador)
         {
-            if(jogador.Sets + 1 == 4)
+            var set = jogador.Sets + 1;
+            jogador.Sets++;
+
+            if (set == Constantes.UltimoSet)
             {
-                Console.WriteLine($"O jogador {jogador} venceu a partida!");
+                Imprimir();
+                Console.WriteLine($"{jogador.Nome} venceu a partida!");
                 Environment.Exit(0);
             }
             else
             {
-                jogador.Sets++;
-                jogador.Games = 0;
-                jogador.Pontos = 0;
+                PrimeiroPlayer.Pontos = 0;
+                SegundoPlayer.Pontos = 0;
+                PrimeiroPlayer.Games = 0;
+                SegundoPlayer.Games = 0;
             }
         }
     }
